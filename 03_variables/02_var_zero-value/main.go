@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// demonstrating variable declaration w/type assignment and printing their zero value if not initialized
+// demonstrating variable declaration w/type assignment git and printing their zero value if not initialized
 func main() {
 
 	var a int
