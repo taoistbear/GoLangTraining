@@ -16,11 +16,11 @@ const (
 func main() {
 	fmt.Println("binary\t\tdecimal")
 	fmt.Printf("%b\t", KB)
-	fmt.Printf("%d\t", KB)
+	fmt.Printf("%d\n", KB)
 	fmt.Printf("%b\t", MB)
-	fmt.Printf("%d\t", MB)
+	fmt.Printf("%d\n", MB)
 	fmt.Printf("%b\t", GB)
-	fmt.Printf("%d\t", GB)
+	fmt.Printf("%d\n", GB)
 	fmt.Printf("%b\t", TB)
-	fmt.Printf("%d\t", TB)
+	fmt.Printf("%d\n", TB)
 }
