@@ -3,22 +3,24 @@ package main
 import "fmt"
 
 const (
-	a = iota // 0
-	b        // 1
-	c        // 2
+	A = iota // 0
+	B        // 1
+	C        // 2
 )
 
 const (
-	d = iota // 0
-	e        // 1
-	f        // 2
+	D = iota // 0
+	E        // 1
+	F        // 2
 )
 
 func main() {
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Println(c)
-	fmt.Println(d)
-	fmt.Println(e)
-	fmt.Println(f)
+	fmt.Println(A)
+	fmt.Println(B)
+	fmt.Println(C)
+	fmt.Println(D)
+	fmt.Println(E)
+	fmt.Println(F)
 }
+
+// by declaring iota in a separate const block iota resets.

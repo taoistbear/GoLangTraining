@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-const p string = "death & taxes"
+const P string = "death & taxes"
 
 func main() {
 
-	const q = 42
+	const Q = 42
 
-	fmt.Println("p - ", p)
-	fmt.Println("q - ", q)
+	fmt.Println("P - ", P)
+	fmt.Println("Q - ", Q)
 
 }
 

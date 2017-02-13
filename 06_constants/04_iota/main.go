@@ -3,13 +3,15 @@ package main
 import "fmt"
 
 const (
-	a = iota // 0
-	b        // 1
-	c        // 2
+	A = iota // 0
+	B        // 1
+	C        // 2
 )
 
 func main() {
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Println(c)
+	fmt.Println(A)
+	fmt.Println(B)
+	fmt.Println(C)
 }
+
+// odd behavior where iota is only declare once yet assumed for not declared variables.

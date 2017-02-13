@@ -3,13 +3,15 @@ package main
 import "fmt"
 
 const (
-	a = iota // 0
-	b = iota // 1
-	c = iota // 2
+	A = iota // 0
+	B = iota // 1
+	C = iota // 2
 )
 
 func main() {
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Println(c)
+	fmt.Println(A)
+	fmt.Println(B)
+	fmt.Println(C)
 }
+
+// iota as a constant... delcaring more iotas will begin to increment.
