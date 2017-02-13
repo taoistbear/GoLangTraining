@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-const p = "death & taxes"
+const p string = "death & taxes"
 
 func main() {
 
@@ -12,3 +12,5 @@ func main() {
 	fmt.Println("q - ", q)
 
 }
+
+// a CONSTANT is a simple unchaning value
