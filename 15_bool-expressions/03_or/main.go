@@ -3,12 +3,8 @@ package main
 import "fmt"
 
 func main() {
-
-	if !true {
-		fmt.Println("This did not run")
-	}
-
-	if !false {
+	if true || false {
 		fmt.Println("This ran")
 	}
+
 }
