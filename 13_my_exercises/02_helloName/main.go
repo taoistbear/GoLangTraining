@@ -13,5 +13,5 @@ import "fmt"
 var myName string = "Josh"
 
 func main() {
-	fmt.Println("Hello " + myName)
+	fmt.Println("Hello", myName)
 }
