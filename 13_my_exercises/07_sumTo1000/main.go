@@ -10,11 +10,9 @@ import "fmt"
 
 func main() {
 	sum := 0
-	for i := 0; i <= 1000; i++ {
+	for i := 0; i < 1000; i++ {
 		if i%3 == 0 || i%5 == 0 {
-			sum = sum + i
-		} else {
-			continue
+			sum += i
 		}
 	}
 	fmt.Println("The sum of all all mutliples of 3 or 5 below 1000 is:", sum)
