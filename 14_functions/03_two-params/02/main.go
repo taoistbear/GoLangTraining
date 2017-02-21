@@ -9,3 +9,6 @@ func main() {
 func greet(fname, lname string) {
 	fmt.Println("Hello", fname, lname)
 }
+
+// with both parameters of type string you can declare type once as shown above
+// that is pretty cool... :)
