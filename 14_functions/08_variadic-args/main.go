@@ -15,3 +15,11 @@ func average(sf ...float64) float64 {
 	}
 	return total / float64(len(sf))
 }
+
+/*
+To understand the diference between variadic functions with parameters and
+agruments look at the place of the elipses. '...' is placed before the parameter
+of TYPE when declaring a function. '...' is placed after the the variable when
+passing an agrument (if the variable is a singular item referencing a data
+structure such as the slice above).
+*/
