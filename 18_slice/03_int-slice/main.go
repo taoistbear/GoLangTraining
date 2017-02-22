@@ -20,3 +20,7 @@ func main() {
 /*
 The capacity doubles everytime it is breached....
 */
+
+/*
+The capacity describes the length of the underlying array.
+*/
