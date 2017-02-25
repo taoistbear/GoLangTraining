@@ -13,3 +13,8 @@ func main() {
 	fmt.Println(students)
 
 }
+
+/*
+When using shorthand or var, i.e. NOT using make(), there is no reference, length
+and/or capacity. That is why append() is needed to add to the []slice.
+*/
