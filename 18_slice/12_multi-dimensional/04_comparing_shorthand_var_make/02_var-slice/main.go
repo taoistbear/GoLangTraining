@@ -13,3 +13,8 @@ func main() {
 	fmt.Println(students)
 
 }
+
+/*
+When using var there is NO undelying array, yet there is no length set,
+thus using append() is neccessary to add items to the []slice
+*/

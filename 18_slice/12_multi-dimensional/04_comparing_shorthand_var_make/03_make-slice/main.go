@@ -13,3 +13,8 @@ func main() {
 	fmt.Println(students)
 
 }
+
+/*
+When using make() everything is set for the []slice. append() is only needed
+after breaching the length specified in the make() statement.
+*/

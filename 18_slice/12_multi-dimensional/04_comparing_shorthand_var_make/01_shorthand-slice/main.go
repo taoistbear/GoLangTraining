@@ -15,6 +15,6 @@ func main() {
 }
 
 /*
-When using shorthand or var, i.e. NOT using make(), there is no reference, length
-and/or capacity. That is why append() is needed to add to the []slice.
+When using shorthand there is an undelying array, yet there is no length set,
+thus using append() is neccessary to add items to the []slice
 */
