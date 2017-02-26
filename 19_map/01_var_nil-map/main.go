@@ -15,3 +15,7 @@ func main() {
 */
 // and you will get this:
 // panic: assignement to entry in nil map
+
+/*
+	There is no append method to get out of this nil hole.
+*/
