@@ -4,6 +4,8 @@ import "fmt"
 
 func main() {
 	var myGreeting map[string]string
+	// var myGreeting = map[string]string{}
+	// using a composit literal works to initialize the map beyond nil
 	fmt.Println(myGreeting)
 	fmt.Println(myGreeting == nil)
 }
