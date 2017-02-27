@@ -2,32 +2,32 @@ package main
 
 import "fmt"
 
-type person struct {
+type Person struct {
 	Name string
 	Age  int
 }
 
-type doubleZero struct {
-	person
+type DoubleZero struct {
+	Person
 	LicenseToKill bool
 }
 
-func (p person) Greeting() {
+func (p Person) Greeting() {
 	fmt.Println("I'm just a regular person.")
 }
 
-func (dz doubleZero) Greeting() {
+func (dz DoubleZero) Greeting() {
 	fmt.Println("Miss Moneypenny, so good to see you.")
 }
 
 func main() {
-	p1 := person{
+	p1 := Person{
 		Name: "Ian Flemming",
 		Age:  44,
 	}
 
-	p2 := doubleZero{
-		person: person{
+	p2 := DoubleZero{
+		Person: Person{
 			Name: "James Bond",
 			Age:  23,
 		},
@@ -36,5 +36,5 @@ func main() {
 
 	p1.Greeting()
 	p2.Greeting()
-	p2.person.Greeting()
+	p2.Person.Greeting()
 }

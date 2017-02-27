@@ -8,6 +8,10 @@ type person struct {
 	age   int
 }
 
+/*
+This embeds the method to the receiver struct!!! This is prettry damn cool
+compared to JavaScript. I like this.
+*/
 func (p person) fullName() string {
 	return p.first + " " + p.last
 }
