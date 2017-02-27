@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-type person struct {
+type Person struct {
 	First       string
 	Last        string
 	Age         int
@@ -13,6 +13,6 @@ type person struct {
 }
 
 func main() {
-	p1 := person{"James", "Bond", 20, 007}
+	p1 := Person{"James", "Bond", 20, 007}
 	json.NewEncoder(os.Stdout).Encode(p1)
 }
