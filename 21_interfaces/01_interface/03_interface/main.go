@@ -38,3 +38,11 @@ func main() {
 	info(s)
 	info(c)
 }
+
+/*
+The polymorphism of using interface unifies similar (but different) methods on similar
+struct(s) etc. It brings things together through an ... interface where methods can
+interact differently depending on what is calling the methods. It is a bucket of sorts
+that can do the hard work for you via the compiler to really narrow down methodology
+to truly be unique and interactive based on how it is being used.
+*/
