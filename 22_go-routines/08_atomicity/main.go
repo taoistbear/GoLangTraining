@@ -22,6 +22,9 @@ func main() {
 func incrementor(s string) {
 	for i := 0; i < 20; i++ {
 		time.Sleep(time.Duration(rand.Intn(3)) * time.Millisecond)
+		// atomic.AddInt64 locks the variable down same as mutex.Lock()/Unlock()
+		// sequence may be a little wonky with atomic methods so if exact sequence
+		// is needed use mutex
 		atomic.AddInt64(&counter, 1)
 		fmt.Println(s, i, "Coutner:", atomic.LoadInt64(&counter)) // access wihtout race
 	}
