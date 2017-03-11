@@ -8,6 +8,7 @@ import (
 func main() {
 	c := make(chan int)
 
+	// by moving the wait group counter out of the goroutines it eliminates the rc
 	var wg sync.WaitGroup
 	wg.Add(2)
 
@@ -27,6 +28,9 @@ func main() {
 
 	go func() {
 		wg.Wait()
+		// notice the close() is in its own goroutine down here waiting for the
+		// WaitGroup to finish before closing the channel
+		// without the close this creates the deadlock and sleeping channel
 		close(c)
 	}()
 

@@ -22,6 +22,12 @@ func main() {
 		done <- true
 	}()
 
+	/*
+		By using this here the semaphore will not allow the program to flow to the
+		range loop. It will never complete and there is not concurrent running.
+		This creates the deadlock! The goroutine prevents this and sets it aside and
+		makes it like an event listening in JavaScript!!!
+	*/
 	// we block here until done <- true
 	<-done
 	<-done

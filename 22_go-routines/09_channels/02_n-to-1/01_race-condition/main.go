@@ -5,6 +5,12 @@ import (
 	"sync"
 )
 
+/*
+	In this example we are exploring the ability for two goroutines to access the same
+	variable. The problem with this is the creation of a race condition by haveing
+	two of the goroutines access the WaitGroup seperately.
+*/
+
 func main() {
 	c := make(chan int)
 

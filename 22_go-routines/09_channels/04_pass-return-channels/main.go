@@ -11,14 +11,14 @@ func main() {
 }
 
 func incrementor() chan int {
-	out := make(chan int)
+	in := make(chan int)
 	go func() {
 		for i := 0; i < 10; i++ {
-			out <- i
+			in <- i
 		}
-		close(out)
+		close(in)
 	}()
-	return out
+	return in
 }
 
 func puller(c chan int) chan int {
